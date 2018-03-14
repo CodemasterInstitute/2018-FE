@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Maps Tutorial- A Simple Map</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+        
+        #map {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="scripts/mapstyle.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4GCoDxivSmDSfGNsb2kKAcEflJTjhvk4&callback=initMap">
+    </script>
+
+</body>
+
+</html>

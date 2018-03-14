@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Add three numbers</title>
+    <!-- hint use prompt() to get the information from the user. -->
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        {
+            let num1 = prompt("Please enter your first number");
+            let num2 = prompt("Please enter your second number");
+            let num3 = prompt("please enter your third number");
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            num3 = parseFloat(num3);
+
+            if (num1 > 0 && num2 > 0 && num3 > 0) {
+                let total = num1 + num2 + num3;
+                console.log(total);
+            } else {
+                console.log("you had some zeros");
+            }
+        }
+    </script>
+</body>
+
+</html>
