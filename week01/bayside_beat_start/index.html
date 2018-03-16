@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,9 @@
   <title>Bayside Beat</title>
   <style>
     body {
-      width: 100%;
+      width:100%;
+      padding: 0;
+      margin: 0;
       background-color: paleturquoise
     }
 
@@ -20,9 +21,11 @@
       color: black;
     }
 
-    .title {
+    .header_title {
       text-align: center;
       color: royalblue;
+      text-shadow: 2px 2px 2px #000;
+      text-transform: uppercase;
     }
 
     * {
@@ -33,24 +36,24 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <h1 class="title">Bayside Beat</h1>
-      <nav class="main">
-        <ul>
-          <li>
-            <a href="#">link 1</a>
+    <header class="header">
+      <h1 class="header_title">Bayside Beat</h1>
+      <nav>
+        <ul class="mainNav">
+          <li class="mainNav_listItem">
+            <a href="#" class="mainNav_itemLink">link 1</a>
           </li>
-          <li>
-            <a href="#">link 2</a>
+          <li class="mainNav_listItem">
+            <a href="#" class="mainNav_itemLink">link 2</a>
           </li>
-          <li>
-            <a href="#">link 3</a>
+          <li class="mainNav_listItem">
+            <a href="#" class="mainNav_itemLink">link 3</a>
           </li>
-          <li>
-            <a href="#">link 4</a>
+          <li class="mainNav_listItem">
+            <a href="#" class="mainNav_itemLink">link 4</a>
           </li>
-          <li>
-            <a href="#">link 5</a>
+          <li class="mainNav_listItem">
+            <a href="#" class="mainNav_itemLink" style="color: red;">link 5</a>
           </li>
         </ul>
       </nav>
