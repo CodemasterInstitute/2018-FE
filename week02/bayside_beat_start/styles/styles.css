@@ -1,152 +1,122 @@
-/*  styles for bayside beat */
-
-
-/*base rules*/
+/* main style sheet
+author: helen burgess
+date: 17 March 2018.
+*/
 
 * {
-    margin: 0;
-    padding: 0;
+    /* border: 1px solid rebeccapurple; */
+    box-sizing: border-box;
 }
-
-
-/*layout rules*/
 
 body {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: lightskyblue;
-    font-family: 'Source Sans Pro', Arial, sans-serif;
+    background-color: paleturquoise;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .wrapper {
     width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
+    color: black;
 }
 
-header,
-footer {
-    height: 17vh;
-}
-
-.title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3em;
-    line-height: 3em;
-    color: steelblue;
+.header_title {
     text-align: center;
+    color: royalblue;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: 20px;
 }
 
-ul.main_nav {
+/* -- navigation--*/
+
+nav ul.mainNav {
+    background-color: #4d4d4d;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    height: 50px;
     list-style: none;
-    height: 3vh;
-    background: #4D4D4D;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
-.link_name {
+ul.mainNav li {
+    height: 20px;
+    padding: 10px 5px 15px;
     width: 20%;
-    text-align: center;
+    /* border: 1px solid white; */
 }
 
-a.link_item,
-a.link_item:link {
+ul.mainNav li a {
     color: white;
-    font-size: 1.5em;
     text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.link_name:hover,
-.link_name.current {
-    background-color: steelblue;
-    padding: 0.5em 0.25em;
-}
+/* -- hero --*/
 
 div.hero {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
     position: relative;
+    width: 100%;
+    margin-top: 0;
 }
 
-.hero_image {
+img.hero_image {
     width: 100%;
 }
 
-.hero_text {
+article.hero_article {
     position: absolute;
-    top: 2.2em;
-    right: 2.5em;
+    top: 10%;
+    right: 10%;
     width: 36%;
+    background-color: rgb(234, 114, 8);
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #FAA356;
-    color: #FFFFFF;
     border-radius: 15px;
 }
 
-.hero_text h2 {
-    color: #ffffff;
+h2.hero_article-title {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: -7px;
+    font-family: 'Source Serif Pro', serif;
 }
+
+article.hero_article p {
+    color: white;
+}
+
+/* main content*/
 
 div.main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-section.col-1 {
-    flex: 2;
-    margin-left: .5em;
-    margin-right: 0.25em;
+.col-1 {
+    flex-grow: 2;
+    margin-right: 5px;
 }
 
-aside.col-2 {
-    flex: 1;
-    margin-right: 0.5em;
-    margin-left: 0.25em;
+.col-2 {
+    flex-grow: 1;
+    margin-left: 5px;
 }
 
-footer {
-    border-top: 1px solid grey;
-}
-
-.footer_text {
-    text-align: center;
-}
-
-
-/*typographical section*/
-
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2em;
-    line-height: 1.8em;
-    color: steelblue;
-}
-
-figure {
-    width: 40%;
-    margin: 1em auto;
-    padding: 1em 1em 2em 1em;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
-}
-
-.fig_image {
-    width: 100%;
-}
-
-figcaption {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
+.main-title {
+    color: #3399CC;
+    font-family: 'Source Serif Pro', serif;
 }
 
 p {
@@ -174,4 +144,41 @@ a:active,
 a:focus {
     color: steelblue;
     text-decoration: underline;
+}
+
+/* -- main figure style */
+
+.main-figure {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(241, 241, 241);
+    box-shadow: 2px 2px 2px 2px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-figure img {
+    width: 100%;
+    padding: 10px 10px 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 0.8em;
+}
+
+/* --footer -- */
+
+footer {
+    background-color: rgb(60, 113, 151);
+    border-top: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.footer_colophon {
+    color: white;
+    margin-left: 2em;
 }
