@@ -5,14 +5,14 @@ date: 17 March 2018.
 
 * {
     /* border: 1px solid rebeccapurple; */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     width: 100%;
     background-color: paleturquoise;
-    margin: 0;
-    padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -26,7 +26,7 @@ body {
 
 .header_title {
     text-align: center;
-    color: royalblue;
+    color: rgb(60, 113, 151);
     font-family: 'Source Serif Pro', serif;
     font-size: 2.5em;
     text-transform: uppercase;
@@ -43,13 +43,14 @@ nav ul.mainNav {
     align-items: center;
     height: 50px;
     list-style: none;
-    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
 }
 
 ul.mainNav li {
     height: 20px;
-    padding: 10px 5px 15px;
+    padding: 10px 15px 15px;
     width: 20%;
     /* border: 1px solid white; */
 }
@@ -115,7 +116,7 @@ div.main {
 }
 
 .main-title {
-    color: #3399CC;
+    color: rgb(60, 113, 151);
     font-family: 'Source Serif Pro', serif;
 }
 
@@ -132,17 +133,17 @@ a {
 }
 
 a:link {
-    color: #FF6600;
+    color: rgb(254, 104, 4);
 }
 
 a:visited {
-    color: #FF944C;
+    color: rgb(76, 64, 56);
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: steelblue;
+    color: rgb(60, 113, 151);
     text-decoration: underline;
 }
 
