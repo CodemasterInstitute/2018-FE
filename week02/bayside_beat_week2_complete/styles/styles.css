@@ -1,0 +1,197 @@
+/* main style sheet
+author: helen burgess
+date: 17 March 2018.
+*/
+
+* {
+    /* border: 1px solid rebeccapurple; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: paleturquoise;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: black;
+}
+
+.header_title {
+    text-align: center;
+    color: rgb(60, 113, 151);
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: 20px;
+}
+
+/* -- navigation--*/
+
+nav ul.mainNav {
+    background-color: #4d4d4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding-bottom: 10px;
+}
+
+ul.mainNav li {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px 15px 15px;
+    width: 20%;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+ul.mainNav li:link {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+ul.mainNav li:hover,
+.current {
+    background-color: steelblue;
+}
+
+ul.mainNav li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* -- hero --*/
+
+div.hero {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+}
+
+img.hero_image {
+    width: 100%;
+}
+
+article.hero_article {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 36%;
+    background-color: rgb(234, 114, 8);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+h2.hero_article-title {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: -7px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+article.hero_article p {
+    color: white;
+}
+
+/* main content*/
+
+div.main {
+    display: flex;
+    padding: 20px 10px 0;
+}
+
+.col-1 {
+    flex-grow: 2;
+    margin-right: 5px;
+}
+
+.col-2 {
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.main-title {
+    color: rgb(60, 113, 151);
+    font-family: 'Source Serif Pro', serif;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(254, 104, 4);
+}
+
+a:visited {
+    color: rgb(76, 64, 56);
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: rgb(60, 113, 151);
+    text-decoration: underline;
+}
+
+/* -- main figure style */
+
+.main-figure {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(241, 241, 241);
+    box-shadow: 2px 2px 2px 2px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-figure img {
+    width: 100%;
+    padding: 10px 10px 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 0.8em;
+}
+
+/* --footer -- */
+
+footer {
+    background-color: rgb(60, 113, 151);
+    border-top: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.footer_colophon {
+    color: white;
+    margin-left: 2em;
+}
