@@ -1,49 +1,117 @@
 /* the styles for misocial page. */
 
+
 /* global styles*/
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     max-width: 1920px;
 }
+
+
 /* header styles */
-.header{
+
+.section.top {
+    background: linear-gradient(to bottom right, rgba(110, 69, 226, 1), rgba(136, 211, 206, 1)), url(../images/Map.png);
+    background-blend-mode: multiply;
+    height: 600px;
+    color: white;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4em;
 }
-.brand{
+
+.brand {
     margin-top: 1em;
+    padding-top: 0.67em;
     text-transform: uppercase;
     width: 300px;
 }
-.brand img{
-    vertical-align: text-top;
+
+.brand img {
+    vertical-align: middle;
     height: 50px;
-    width:50px; 
+    width: 50px;
 }
-/* navigation styles */
-.navbar, .navbar>ul{
+
+.banner {
+    margin-left: auto;
+    width: 90%;
     display: flex;
-    width: 80%
+    justify-content: space-between;
 }
-.navbar>ul{
+
+.banner-text {
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+
+/* navigation styles */
+
+.navbar,
+.navbar>ul {
+    display: flex;
+    width: 60%;
+}
+
+.navbar>ul {
     list-style: none;
     margin: auto;
 }
-.navbar>ul li{
+
+.navbar>ul li {
     margin-left: auto;
     margin-right: auto;
 }
 
-
-.navbar .cta{
+.navbar .cta {
     margin: auto;
 }
 
+
+/* buttons */
+
+.btn {
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 0.8em 1em;
+    margin-top: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+a.cta {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-purple {
+    background: rgb(110, 69, 226);
+    border-color: rgb(110, 69, 226);
+    color: white;
+}
+
+.btn-white {
+    background: rgb(255, 255, 255);
+    color: #999;
+}
+
+.btn:hover,
+.btn-purple:hover,
+.btn-white:hover {
+    background: white;
+    color: rgb(110, 69, 226);
+}
