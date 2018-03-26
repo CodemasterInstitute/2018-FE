@@ -1,0 +1,49 @@
+/* the styles for misocial page. */
+
+/* global styles*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    max-width: 1920px;
+}
+/* header styles */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.brand{
+    margin-top: 1em;
+    text-transform: uppercase;
+    width: 300px;
+}
+.brand img{
+    vertical-align: text-top;
+    height: 50px;
+    width:50px; 
+}
+/* navigation styles */
+.navbar, .navbar>ul{
+    display: flex;
+    width: 80%
+}
+.navbar>ul{
+    list-style: none;
+    margin: auto;
+}
+.navbar>ul li{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar .cta{
+    margin: auto;
+}
+
