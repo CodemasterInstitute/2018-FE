@@ -15,20 +15,25 @@ body {
     max-width: 1920px;
 }
 
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
 
 /* header styles */
 
-.section.top {
+.top,
+.bottom {
     background: linear-gradient(to bottom right, rgba(110, 69, 226, 1), rgba(136, 211, 206, 1)), url(../images/Map.png);
     background-blend-mode: multiply;
-    height: 600px;
     color: white;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4em;
 }
 
 .brand {
@@ -45,14 +50,40 @@ body {
 }
 
 .banner {
+    margin-top: 0;
     margin-left: auto;
+    padding-top: 0;
     width: 90%;
     display: flex;
     justify-content: space-between;
 }
 
+.banner>article {
+    flex: 1;
+    margin-top: 4em;
+}
+
+.banner>img {
+    flex: 2;
+}
+
+.banner-caption,
+.sub-title {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.banner-heading {
+    font-size: 3em;
+}
+
+.banner-caption::before,
+.sub-title.half::before {
+    content: '\2003 \2014 ';
+}
+
 .banner-text {
-    width: 80%;
     margin-bottom: 2em;
 }
 
@@ -60,7 +91,8 @@ body {
 /* navigation styles */
 
 .navbar,
-.navbar>ul {
+.navbar>ul,
+.bottom-nav {
     display: flex;
     width: 60%;
 }
@@ -73,6 +105,17 @@ body {
 .navbar>ul li {
     margin-left: auto;
     margin-right: auto;
+}
+
+.navbar li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar>ul li:hover,
+li.current {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
 }
 
 .navbar .cta {
@@ -114,4 +157,75 @@ a.cta {
 .btn-white:hover {
     background: white;
     color: rgb(110, 69, 226);
+}
+
+
+/* section and main contents */
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section[class^='col-'] {
+    flex-basis: 50%;
+    flex: 1;
+}
+
+section.col-1>img {
+    width: 100%;
+}
+
+section.col-2 {
+    margin-top: 5em;
+    padding-left: 2em;
+}
+
+section.row-1 {
+    padding-top: 2em;
+    color: white;
+}
+
+section.row-1-blk {
+    padding-top: 2em;
+    color: black;
+    flex-basis: 100%;
+}
+
+section.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* specified section backgrounds */
+
+.why {
+    background: linear-gradient(110deg, #f2f5f7, #eff2f6);
+}
+
+.features {
+    background: linear-gradient(to bottom right, rgba(110, 69, 226, 1), rgba(136, 211, 206, 1));
+}
+
+.about {
+    background: url(../images/aboutSectionBckgrnd.png);
+}
+
+
+/* titles & subtitles */
+
+.sub-title.full {
+    text-align: center;
+}
+
+.sub-title.full::before,
+.sub-title.full::after {
+    content: '\2003 \2014 \2003';
 }
