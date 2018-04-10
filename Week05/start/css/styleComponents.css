@@ -1,0 +1,31 @@
+/* CSS Document */
+.flex-center {
+    color: #fff;
+}
+
+.intro-1 {
+    width: 1919px;
+	height: 500px;
+	background-color: rgba(255, 255, 255, 0);
+	background-image: -webkit-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
+	background-image: -moz-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
+	background-image: -o-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
+	background-image: linear-gradient(145deg, #9966cc 34%, #e18522 66%);
+    background-size: cover;
+}
+
+.navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+}
+
+.navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+}
+
+.top-nav-collapse {
+    background-color: rgba(255, 255, 255, 0);
+	background-image: -webkit-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
+	background-image: -moz-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
+	background-image: -o-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
+	background-image: linear-gradient(145deg, #9966cc 34%, #e18522 66%);
+}
