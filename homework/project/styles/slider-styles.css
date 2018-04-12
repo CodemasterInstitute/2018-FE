@@ -61,7 +61,7 @@
     font-size: 0;
     line-height: 0;
     background-color: white;
-    border: 10px solid #3a3a3a;
+    border: 5px solid #3a3a3a;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
@@ -259,12 +259,9 @@
     transform: rotate(225deg);
 }
 
-
 /*#region MODULES */
 
-
 /*#endregion */
-
 
 /*___________________________________ LAYOUT ___________________________________ */
 
@@ -403,7 +400,6 @@ body {
     font-variant: small-caps;
 }
 
-
 /*___________________________________ LINK ___________________________________ */
 
 a.nice-link {
@@ -442,7 +438,6 @@ a.nice-link:hover {
 a.nice-link:hover:after {
     width: 100%;
 }
-
 
 /*___________________________________ SIGN ___________________________________ */
 

@@ -16,7 +16,8 @@ body {
     flex-direction: column;
 }
 
-div.top {
+div.top,
+.section.bottom {
     background: linear-gradient(70deg, rgba(141, 148, 212, 1), rgba(175, 198, 209, 1)), url(../images/Map.png);
     background-blend-mode: multiply;
     background-size: contain;
