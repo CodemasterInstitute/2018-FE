@@ -278,6 +278,7 @@ p {
 
 .getStarted {
 	justify-content: space-around;
+	height: 30vh;
 }
 
 .getStarted .col-1 {
@@ -294,22 +295,31 @@ p {
 
 form > div.form-group {
 	display: inline-block;
-	height: 2rem;
 	padding: 2em 1em;
+	position: relative;
 }
 
 div.form-group label.label {
-	width: 10vw;
+	width: 20vw;
 }
 
 div.form-group input.form-control,
 div.form-group textarea {
-	width: 25vw;
+	display: block;
+	width: 30vw;
 	margin: 0.5em;
 }
 
 div.form-group select.form-control {
-	width: 10vw;
+	width: 25vw;
+	display: block;
+}
+
+button.form-control {
+	position: relative;
+	top: 7vh;
+	left: -32vw;
+	width: 15vw;
 }
 
 /* articles */
