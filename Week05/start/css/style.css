@@ -1,3 +1,19 @@
 /* Your custom styles */
 
-/* TEMPLATE STYLES */
+ul {
+    list-style: none;
+}
+
+.project-item {
+    border: 2px white solid;
+    border-radius: 100%;
+    font-size: 4em;
+    font-weight: 700;
+    width: 25%;
+    margin: 0 auto;
+}
+
+h5 {
+    font-weight: 800;
+    margin-top: 1em;
+}

@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+div.top,
+.section.bottom {
+    background: linear-gradient(70deg, rgba(105, 103, 209, 1), rgba(174, 198, 209, 1)), url(../images/Map.png) no-repeat;
+    background-blend-mode: multiply;
+    background-size: contain;
+    height: 600px;
+    color: white;
+    width: 100vw;
+}
+
+div.top-gs {
+    background: linear-gradient(70deg, rgba(105, 103, 209, 1), rgba(174, 198, 209, 1)), url(../images/computer-hands.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 600px;
+    color: white;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.brand {
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.brand .center {
+    padding-top: 0;
+}
+
+nav {
+    display: flex;
+    margin-left: 4em;
+}
+
+.navbar,
+.navbar.dark,
+.navbar.socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul,
+.banner {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+li a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.dark li a:link,
+.dark li a:visited {
+    color: #666;
+}
+
+li.current {
+    border-bottom: 2px solid white;
+}
+
+.dark li.current {
+    border-color: #666;
+}
+
+/* banner */
+
+.banner {
+    height: 50vh;
+    margin-bottom: 3em;
+    justify-content: space-around;
+}
+
+.banner .col-1,
+.banner .col-2 {
+    width: 45%;
+}
+
+p.banner-text {
+    margin-bottom: 5em;
+}
+
+.banner .col-2>img {
+    width: 500px;
+    margin: 0;
+}
+
+/* buttons */
+
+.btn {
+    border: 1px solid white;
+    border-radius: 1.5em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: -0.5em;
+}
+
+.btn-purple {
+    background-color: #6860d1;
+    border-color: #6860d1;
+}
+
+.btn-purple:link,
+.btn-purple {
+    color: white;
+    font-weight: 600px;
+}
+
+.btn-purple:hover {
+    border-color: white;
+    color: #6860d1;
+    background-color: white;
+}
+
+.btn-white {
+    background: white;
+    color: #717fa4;
+}
+
+/* .section class */
+
+div.section {
+    width: 100vw;
+    display: flex;
+}
+
+section [class^='col-'] {
+    flex-basis: 25rem;
+}
+
+.sub-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.half::before,
+.full::before,
+.full::after {
+    content: '\0020 \2014 \0020';
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0.5em;
+    line-height: 1em;
+    font-size: 0.8em;
+}
+
+/*-- why, getStarted  --*/
+
+.why,
+.getStarted {
+    background-color: rgba(164, 180, 211, 0.121);
+}
+
+/* Why */
+
+.why {
+    flex-wrap: no-wrap;
+    background: linear-gradient(70deg, rgba(241, 244, 247, 1), rgba(240, 244, 246, 1));
+    height: 40vh;
+}
+
+.col-1 img {
+    width: 50%;
+}
+
+/* features & columns */
+
+.features {
+    background: linear-gradient(70deg, rgba(105, 103, 209, 1), rgba(174, 198, 209, 1));
+    flex-wrap: wrap;
+    color: white;
+    height: 70vh;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 2em;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.columns ul {
+    flex-basis: 30%;
+    list-style: none;
+}
+
+.columns ul li {
+    padding-left: 1.3em;
+}
+
+.columns ul li::before {
+    font-family: 'Font Awesome 5 Solid';
+    content: '\f46c';
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    top: 1em;
+}
+
+/* meet the team */
+
+.testamonials,
+.team {
+    flex-wrap: wrap;
+}
+
+.testamonials,
+.about {
+    height: 50vh;
+}
+
+.team {
+    height: 70vh;
+}
+
+.row-2.image-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* getstarted */
+
+.getStarted {
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.getStarted .col-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* get Started -form */
+
+.col-2 form {
+    display: inline-block;
+    width: 70vw;
+}
+
+form>div.form-group {
+    display: inline-block;
+    padding: 2em 1em;
+    position: relative;
+}
+
+div.form-group label.label {
+    width: 20vw;
+}
+
+div.form-group input.form-control,
+div.form-group textarea {
+    display: block;
+    width: 30vw;
+    margin: 0.5em;
+}
+
+div.form-group select.form-control {
+    width: 25vw;
+    display: block;
+}
+
+button.form-control {
+    position: relative;
+    top: 7vh;
+    left: -32vw;
+    width: 15vw;
+}
+
+/* articles */
+
+.section.articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.panel {
+    width: 18rem;
+    margin: 1em;
+}
+
+.panel-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.panel-body {
+    padding: 1em;
+    text-align: left;
+}
+
+.panel-heading {
+    font-size: 1.75em;
+    margin-bottom: 0.4em;
+}
+
+.panel-subheading {
+    font-size: 1em;
+    color: #717fa4;
+    margin-bottom: 0.4em;
+}
+
+.short {
+    width: 5rem;
+    background-color: #6860d1;
+    padding-top: 0.1em;
+    margin-bottom: 0.4em;
+}
+
+.panel-text {
+    font-size: 0.8em;
+}
+
+ul.panel-footer {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-top: 1em;
+}
+
+ul.panel-footer>li {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+ul.panel-footer li:last-of-type {
+    text-align: right;
+}
+
+/* bottom */
+
+.bottom {
+    width: 50vw;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    margin-top: 3rem;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+sr-only {
+    display: none;
+}
