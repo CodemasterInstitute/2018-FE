@@ -8,156 +8,174 @@
   <title>Misocial</title>
   <!-- fonts used are Maven Pro and Playfair-->
   <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Playfair+Display+SC" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/brands.css" integrity="sha384-ATC/oZittI09GYIoscTZKDdBr/kI3lCwzw3oBMnOYCPVNJ4i7elNlCxSgLfdfFbl"
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css" integrity="sha384-Lyz+8VfV0lv38W729WFAmn77iH5OSroyONnUva4+gYaQTic3iI2fnUKtDSpbVf0J"
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
-  <link href="styles/styles.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="styles/my-styles.css">
+
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="top-gs">
-      <header class="header">
-        <h1 class="brand">
-          <img src="images/logo_1.svg" alt="MISOCIAL logo" style="width: 50px; height: 50px; padding-top: 0.67em;"> misocial
-        </h1>
-        <nav>
-          <ul class=" navbar ">
-            <li class="current ">
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="why.html">Why MISOCIAL</a>
-            </li>
-            <li>
-              <a href="features.html ">Features</a>
-            </li>
-            <li>
-              <a href="articles.html ">Articles</a>
-            </li>
-            <li>
-              <a href="pricing.html ">Pricting</a>
-            </li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand white-text" href="#">
+          <h3 class="text-uppercase">
+            <img src="images/logo_1.svg" alt="MISOCIAL logo" style="width: 50px; height: 50px;"> misocial
+          </h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="avbarSupportedContent-7">
 
-
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="why.html">Why MISOCIAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="articles.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
           </ul>
-          <a href="# " class="btn cta">Get Started</a>
-        </nav>
-      </header>
-      <div class="banner">
-        <div class="col-1">
-          <h2 class="banner-caption full">social marketing &amp; analytics</h2>
-          <h1 class="banner-heading">Keep in Touch
-          </h1>
-          <p class="banner-text">Spicy jalapeno bacon ipsum dolor amet occaecat consectetur ground round shank biltong buffalo culpa venison ad
-            commodo cupidatat sed dolor ham hock. </p>
+          <a href="getstarted.html" class="btn btn-outline">Get Started</a>
         </div>
-        <!-- insert down arrow inside a circle -->
       </div>
-    </div>
-    <div class="section getStarted">
-      <section class="col-1">
-        <h3 class="sub-title half">Keep in Touch</h3>
-        <h2 class="title">Let's get Started</h2>
-        <p>speil</p>
-        <p>speil</p>
-      </section>
-      <section class="col-2">
-        <!-- name, email, how much to spend,
-        what services are you interested in,  additional info, submit button -->
-        <form id="keepInTouch" method="post" action="thank-you.html">
-          <div class="form-group">
-            <label for="name" class="label">Full Name</label>
-            <input type="text" name="name" id="name" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="email" class="label">Email</label>
-            <input type="email" name="email" id="email" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="budget" class="label">How Much do you wish to spend</label>
-            <select name="budget" id="budget" class="form-control">
-              <option value="unknown">Unkown</option>
-              <option value="500">$ 500</option>
-              <option value="1000">$ 1000</option>
-              <option value="1500">$ 100</option>
-              <option value="2000">$ 2000</option>
-              <option value="2500">$ 2500</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="budget" class="label">What Services are you interested in?</label>
-            <select name="budget" id="budget" class="form-control">
-              <option value="please select">Please Select a Service</option>
-              <option value="Service 1">Service 1</option>
-              <option value="Service 2">Service 1</option>
-              <option value="Service 3">Service 1</option>
-              <option value="All">All Services</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="additional-info" class="label">Any Additional Information?</label>
-            <textarea name="addition-info" id="add-info"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-purple form-control">Send</button>
-          </div>
-        </form>
-
-      </section>
-    </div>
-
-    <nav class="bottom-nav">
-      <h3 class="brand ">
-        <img src="images/logo_1.svg " alt="MISOCIAL logo " style="width:48px; height: 48px; "> MISOCIAL</h3>
-      <ul class="navbar dark">
-        <li>
-          <a href="# "></a>Home</li>
-        <li>
-          <a href="why.html "></a> Why MISOCIAL</li>
-        <li>
-          <a href="features.html ">Features</a>
-        </li>
-        <li>
-          <a href="articles.html ">Articles</a>
-        </li>
-        <li>
-          <a href="pricing.html ">Pricting</a>
-        </li>
-      </ul>
-      <a href="getstarted.html" class="btn btn-purple" style="height: 2em; margin-top: 1em;">Get Started</a>
     </nav>
-    <footer class="footer ">
-      <p class="copyright ">&copy; 2018 Make the right impression</p>
-      <nav>
-        <ul class="navbar socials ">
-          <li>
-            <span class="sr-only ">facebook</span>
-            <a href="https://facebook.com/">
-              <i class="fab fa-facebook-square" style="font-size: 2em; color: rebeccapurple;"></i>
-            </a>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    <div class="view  jarallax" data-jarallax="{'speed': 0.2}" style="background: linear-gradient(70deg, rgba(105, 103,
+          209, 1), rgba(174, 198, 209, 1)), url(images/Map.png); background-repeat: no-repeat; background-size:
+          contain; background-position: center center; background-blend-mode: multiply; ">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center ">
+        <!-- Content -->
+        <div class="container ">
+          <!--Grid row-->
+          <div class="row wow fadeIn ">
+            <!--Grid column-->
+            <div class="col-md-6 text-center ">
+              <h5 class="pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 wow fadeInUp " data-wow-delay="0.2s ">social marketing &amp; analytics</h5>
+              <h1 class="display-4 font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInUp ">Take control of your identity on the web</h1>
+              <p>Spicy jalapeno bacon ipsum dolor amet occaecat consectetur ground round shank biltong buffalo culpa venison
+                ad commodo cupidatat sed dolor ham hock. </p>
+              <div class="wow fadeInUp " data-wow-delay="0.4s ">
+                <a class="btn btn-purple ">
+                  Get Started</a>
+                <a class="btn btn-white ">
+                  Explore Features</a>
+              </div>
+              <!-- insert down arrow inside a circle -->
+            </div>
+            <!--Grid column-->
+            <div class="col-md-6 ">
+              <img src="images/mainHeaderMockup.png ">
+            </div>
+          </div>
+          <!-- Grid column -->
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+  </header>
+  <!--Footer-->
+  <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+    <div class="row">
+      <div class="col-md-5 text-left ml-3">
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a href="#">Home</a>
           </li>
-          <li>
-            <span class="sr-only ">twitter</span>
-            <a href="https://twitter.com ">
-              <i class="fab fa-twitter-square" style="font-size: 2em; color: rebeccapurple;"></i>
-            </a>
+          <li class="list-inline-item">
+            <a href="why.html">Why MISOCIAL</a>
           </li>
-          <li>
-            <span class="sr-only ">google+</span>
-            <a href=" "></a>
+          <li class="list-inline-item">
+            <a href="features.html">Features</a>
           </li>
-          <li>
-            <span class="sr-only ">instagram</span>
-            <a href=" "></a>
+          <li class="list-inline-item">
+            <a href="articles.html">Articles</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="pricing.html">Pricing</a>
           </li>
         </ul>
-      </nav>
-    </footer>
-  </div>
+      </div>
+      <div class="text-right">
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-sm btn-fb mx-1">
+              <i class="fab fa-facebook"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-sm btn-tw mx-1">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-sm btn-gplus mx-1">
+              <i class="fab fa-google-plus"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-sm btn-li mx-1">
+              <i class="fab fa-linkedin"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-sm btn-dribbble mx-1">
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Social buttons-->
+    </div>
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+      © 2018 Copyright:
+      <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MISOCIAL</a>
+    </div>
+    <!--/.Copyright-->
 
+  </footer>
+  <!--/.Footer-->
+
+
+  <!-- framework scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+    crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js " integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ "
+    crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm "
+    crossorigin="anonymous "></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js "></script>
+
+  <script>
+    new WOW().init();
+
+    $('.carousel').carousel()
+  </script>
 </body>
 
 </html>
