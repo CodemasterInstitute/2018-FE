@@ -1,17 +1,43 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Calculate Afford Car</title>
-<!-- hint use prompt() to get the information from the user. -->
-<script type="text/javascript" >
-
-
-
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculate Afford Car</title>
 </head>
 
 <body>
+  <!-- hint use prompt() to get the information from the user. -->
+  <script>
+    let bike = prompt("Please enter the value of selling your bike?");
+    let tv = prompt("Please enter the value of selling your TV");
+    let iPad = prompt("Please enter the value of selling your iPad");
+    let carPrice = prompt("Please enter the price of the car you are buying")
+    bike = parseFloat(bike);
+    tv = parseFloat(tv);
+    iPad = parseFloat(iPad);
+    carPrice = parseFloat(carPrice);
 
- </body>
- </html>
+    if (bike > 0 && tv > 0 && iPad > 0) {
+      let total = bike + tv + iPad;
+      let affordCar = false;
+      console.log(total);
+      if (carPrice - total == 0) {
+        affordCar = true;
+        console.log('you can afford to buy the car');
+      } else {
+        console.log('you cannot afford to buy the car');
+      }
+    } else {
+      console.log("you had some zeros");
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
