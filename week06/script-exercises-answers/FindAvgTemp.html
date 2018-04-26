@@ -11,9 +11,19 @@
     <h1>Find Average Temp</h1>
     <!-- hint use prompt() to get the information from the user. -->
     <script type="text/javascript">
-    //get a series of temperatures
-    //add them together then find out the average temperature 
-    //display the average temperature to the console.
+        let temps = [];
+        let avgTemp = 0.0;
+        //get a series of temperatures
+        for (let i = 0; i < 4; i += 1) {
+            temps[i] = prompt("please enter the temperature");
+            temps[i] = parseFloat(temps[i]);
+            console.log(temps[i]);
+        }
+        //add them together then find out the average temperature 
+        avgTemp = (temps[0] + temps[1] + temps[2] + temps[3]) / 4;
+        //display the average temperature to the console.
+        avgTemp = avgTemp.toFixed(2);
+        console.log(`The average temperature over 4 days is ${avgTemp}`)
     </script>
 </body>
 

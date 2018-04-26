@@ -13,18 +13,17 @@
 
     <p id="end">End</p>
 
-    <script type="text/javascript">
-        for (var fTemp = 0; fTemp <= 100; fTemp += 5) {
-            var cTemp = (fTemp - 32) * 5 / 9;
+    <script>
+        for (let fTemp = 0; fTemp <= 100; fTemp += 5) {
+            let cTemp = (fTemp - 32) * 5 / 9;
             // added to only have 2 decimal points of accuracy
             cTemp = cTemp.toFixed(2);
-            console.log(fTemp + "℉ = " + cTemp + " ℃");
-            // var tempResult = document.createElement('p');
-            // tempResult.appendChild(document.createTextNode(fTemp + "℉ = " + cTemp + " ℃"));
-            // var scr = document.getElementById('end');
-            // scr.parentNode.insertBefore(tempResult, scr);
+            //console.log(`${fTemp}℉ \t = \t ${cTemp}℃`);
+            var tempResult = document.createElement('p');
+            tempResult.appendChild(document.createTextNode(`${fTemp}℉ \t = \t ${cTemp}℃`));
+            var scr = document.getElementById('end');
+            scr.parentNode.insertBefore(tempResult, scr);
         }
-
     </script>
 </body>
 

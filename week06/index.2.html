@@ -16,7 +16,21 @@
   <script>
     let firstName = "helen";
     let lastName = "burgess";
-    console.log(firstName + lastName);
+    console.log(`${firstName}  ${lastName}`);
+    //printf(`${firstName}  ${lastName}`);
+    //document.write(`${firstName}  ${lastName}`);
+
+    let password = "foo";
+    if (password < 6) {
+      console.log("Password is too short.");
+    }
+
+    //password = "foobar1";
+    if (password < 6) {
+      console.log("Password is too short.")
+    } else {
+      console.log("Password is long enough.");
+    }
   </script>
 </body>
 

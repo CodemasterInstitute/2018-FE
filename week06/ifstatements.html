@@ -26,21 +26,24 @@
         num1 = parseInt(num1);
         num2 = parseInt(num2);
 
-        /* if (num1 === num2) {
+        /*if (num1 === num2) {
             let result = "match";
             console.log(result);
         } else {
             result = "not a match";
             console.log(result);
         }
-       
-               if ((num1 === 0) || (num2 === 0)) { //for checking both numbers are not zero
-                   result = "do not use for division";
-                   console.log(result);*/
+
+        if ((num1 === 0) || (num2 === 0)) {
+            //for checking both numbers are not zero
+            result = "do not use for division";
+            console.log(result);
+*/
         function mathDemo(num1, num2) {
             if ((num1 > 0) || (num2 > 0)) {
                 total = num2 * num1;
-                console.log(num2 + "*" + num1 + " = " + total);
+                console.log(
+                    `${num2} * ${num1}  = ${total}`);
                 total = num2 / num1;
                 console.log(num2 + "/" + num1 + " = " + total);
                 total = num2 + num1;
@@ -54,7 +57,7 @@
         }
 
         let addBtn = document.getElementById("add");
-        addBtn.click = mathDemo();
+        addBtn.onclick = mathDemo(num1, num2);
     </script>
 
 </body>
