@@ -1,38 +1,27 @@
-// Script 4.5 - sphere.js
-// This script calculates the volume of a sphere.
-
-// Function called when the form is submitted.
-// Function performs the calculation and returns false.
 function calculate() {
-    'use strict';
+	let volume;
 
-    // For storing the volume:
-    var volume;
+	//get the reference from the form for radius
+	let radius = document.querySelector('#radius').value;
 
-    // Get a reference to the form value:
-    var radius = document.getElementById('radius').value;
+	//make sure the radius is positive
+	//radius = Math.abs(radius);
+	//using an if statement to check for a value and it is positive
+	console.log(radius);
+	if (radius && radius > 0) {
+		//calculate sphere volume
+		volume = 4 / 3 * Math.PI * Math.pow(radius, 3);
+		//fix to 4 decimal places
+		volume = volume.toFixed(4);
+		//display volume;
+		document.querySelector('#volume').value = volume;
+	} //end of the if
 
-    // Make sure it's positive:
-    radius = Math.abs(radius);
+	return false;
+}
 
-    // Perform the calculation:
-    volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
-
-    // Format the volume:
-    volume = volume.toFixed(4);
-
-    // Display the volume:
-    document.getElementById('volume').value = volume;
-
-    // Return false to prevent submission:
-    return false;
-
-} // End of calculate() function.
-
-// Function called when the window has been loaded.
-// Function needs to add an event listener to the form.
 function init() {
-    'use strict';
-    document.getElementById('theForm').onsubmit = calculate;
-} // End of init() function.
+	document.querySelector('form').onsubmit = calculate;
+}
+
 window.onload = init;

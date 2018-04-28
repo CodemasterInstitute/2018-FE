@@ -1,38 +1,25 @@
-// Script  - text.js
-// This script limits the amount of text that can be entered into a textarea.
-
-// Function called when the form is submitted.
-// Function limits the text and returns false.
+//function is called when the form is submitted
+//return false.
 function limitText() {
-    'use strict';
+	'use strict';
 
-    // For storing the limited text:
-    var limitedText;
+	//store the text that is limited
+	let limitedText;
 
-    // Get a reference to the form value:
-    var originalText = document.getElementById('comments').value;
+	const originalText = document.getElementById('comments').value;
+	const lastSpace = originalText.lastIndexOf(' ', 100);
 
-    // Find the last space before 100 characters:
-    var lastSpace = originalText.lastIndexOf('s', 100);
+	limitedText = originalText.slice(0, lastSpace);
+	//displaying the character count.
+	document.getElementById('count').value = originalText.length;
+	document.getElementById('result').value = limitedText;
 
-    // Trim the text to that spot:
-    limitedText = originalText.slice(0, lastSpace);
-
-    // Display the number of characters submitted:
-    document.getElementById('count').value = originalText.length;
-
-    // Display the limitedText:
-    document.getElementById('result').value = limitedText;
-
-    // Return false to prevent submission:
-    return false;
-
-} // End of limitText() function.
-
-// Function called when the window has been loaded.
-// Function needs to add an event listener to the form.
-function init() {
-    document.getElementById('theForm').onsubmit = limitText;
+	return false;
 }
-// End of init() function.
+
+function init() {
+	'use strict';
+	document.getElementById('theForm').onsubmit = limitText;
+}
+
 window.onload = init;

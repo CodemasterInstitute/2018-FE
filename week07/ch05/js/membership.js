@@ -1,67 +1,49 @@
-// membership.js
-// This script calculates the cost of a membership.
-
-// Function called when the form is submitted.
-// Function performs the calculation and returns false.
 function calculate() {
+	let cost = 0.0;
+	let type = document.querySelector('#type');
+	let years = document.querySelector('#years');
 
-    // Be strict:
-    'use strict';
+	//convert them to a number
+	if (years && years.value) {
+		years = parseInt(years.value, 10);
+	}
 
-    // Variable to store the total cost:
-    var cost;
+	//check for valid data:
+	if (type && type.value && years && years > 0) {
+		//determine base cost:
+		switch (type.value) {
+			case 'basic':
+				cost = 10.0;
+				break;
+			case 'premium':
+				cost = 15.0;
+				break;
+			case 'gold':
+				cost = 20.0;
+				break;
+			case 'platinum':
+				cost = 25.0;
+				break;
+		} //end of switch
 
-    // Get a reference to the form elements:
-    var type = document.getElementById('type');
-    var years = document.getElementById('years');
+		//factor the number of years
+		cost *= years;
 
-    // Convert the year to a number:
-    if (years && years.value) {
-        years = parseInt(years.value, 10);
-    }
+		//add discount for multiple years
 
-    // Check for valid data: 
-    if (type && type.value && years && (years > 0)) {
+		if (years > 1) {
+			cost *= 0.8; //80%
+		}
 
-        // Determine the base cost:
-        switch (type.value) {
-            case 'basic':
-                cost = 10.00;
-                break;
-            case 'premium':
-                cost = 15.00;
-                break;
-            case 'gold':
-                cost = 20.00;
-                break;
-            case 'platinum':
-                cost = 25.00;
-                break;
-        } // End of switch.
+		document.getElementById('cost').value = `\$${cost.toFixed(2)}`;
+	} else {
+		document.getElementById('cost').value = 'Please put in valid values.';
+	}
+	return false;
+}
 
-        // Factor in the number of years:
-        cost *= years;
-
-        // Discount multiple years:
-        if (years > 1) {
-            cost *= .80; // 80%
-        }
-
-        // Show the total amount:
-        document.getElementById('cost').value = '$' + cost.toFixed(2);
-
-    } else { // Show an error:
-        document.getElementById('cost').value = 'Please enter valid values.';
-    }
-
-    // Return false to prevent submission:
-    return false;
-
-} // End of calculate() function.
-
-// Initial setup:
 function init() {
-    'use strict';
-    document.getElementById('theForm').onsubmit = calculate;
-} // End of init() function.
+	document.querySelector('form').onsubmit = calculate;
+}
+
 window.onload = init;

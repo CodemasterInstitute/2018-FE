@@ -1,35 +1,20 @@
-// Script - names.js
-// This script concatenates two strings together to format a name.
-
-
-// Function called when the form is submitted.
-// Function formats the text and returns false.
 function formatNames() {
-    'use strict';
-    // For storing the formatted name:
-    var formattedName;
+	'use strict';
 
-    // Get a reference to the form values:
-    var firstName = document.getElementById('firstName').value;
-    var lastName = document.getElementById('lastName').value;
+	let formattedName;
 
+	let firstName = document.getElementById('firstName').value;
+	let lastName = document.getElementById('lastName').value;
 
-    // Create the formatted name - lastname, firstname
-    formattedName = lastName + ', ' + firstName;
-    // Display the formatted name:
-    document.getElementById('result').value = formattedName;
+	formattedName = `${lastName}, ${firstName}`;
 
-    // Return false to prevent submission:
-    return false;
+	document.getElementById('result').value = formattedName;
 
-} // End of formatNames() function.
-
-// Function called when the window has been loaded.
-// Function needs to add an event listener to the form.
-function init() {
-    'use strict';
-    document.getElementById('theForm').onsubmit = formatNames;
+	return false;
 }
 
-// End of init() function.
+function init() {
+	'use strict';
+	document.getElementById('theForm').onsubmit = formatNames;
+}
 window.onload = init;
