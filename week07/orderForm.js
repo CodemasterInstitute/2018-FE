@@ -11,7 +11,7 @@ function calculate() {
     var number = document.getElementById('number').value;
 
     number = parseInt(number);
-    if (typeof(number) == 'number') {
+    if (typeof (number) == 'number') {
 
 
         //var to store results
